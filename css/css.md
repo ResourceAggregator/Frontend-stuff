@@ -7,7 +7,7 @@
 3.  Pseudo-class selectors
 4.  Colors
 5.  Making Sense of Units in CSS
-
+6.  Understanding CSS Display : none, inline , block, inline-block
 
 ----
 ## 1.Order in css
@@ -130,3 +130,34 @@ Below are the units :
 - Viewport height (vh) and width (vw): The vw and vh units are determined based on the viewport i.e the entire display screen.
 
  vw stands for viewport width, and vh stands for viewport height.
+ 
+ 
+ 
+ 6. ## Understanding CSS Display
+ 
+#### a. Display: None   vs.  Visibility: Hidden 
+
+![image](https://user-images.githubusercontent.com/43414928/87634529-11096080-c75b-11ea-9063-5bde3fd88a2e.png)
+![image](https://user-images.githubusercontent.com/43414928/87634552-1e264f80-c75b-11ea-99d2-62f971f3a77e.png)
+![image](https://user-images.githubusercontent.com/43414928/87634565-27172100-c75b-11ea-9bd6-30180f8118e7.png)
+
+ Visibility: hidden hides the tag, but it still takes up space and affects the page. In contrast, display: none removes the tag and its effects for all intents and purposes, but the tag remains visible in the source code. 
+
+<br/> 
+#### b. inline vs block (div vs span) 
+ 
+- div is a block element
+- span is an inline element
+
+![image](https://user-images.githubusercontent.com/43414928/87633648-59278380-c759-11ea-8b0b-fc543d85a590.png)
+![image](https://user-images.githubusercontent.com/43414928/87633668-63e21880-c759-11ea-94fd-4801f4b01803.png)
+
+
+![image](https://user-images.githubusercontent.com/43414928/87634071-33e74500-c75a-11ea-801f-6f7fe6dd2a4b.png)
+
+```
+Inline elements don’t accept width or height properties, and top-bottom margin
+ **display: inline-block** declaration shows both the characteristics of inline and block-level elements.
+```
+![image](https://user-images.githubusercontent.com/43414928/87634920-d653f800-c75b-11ea-9f4d-cca687ad8392.png)
+
