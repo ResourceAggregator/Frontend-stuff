@@ -1,17 +1,22 @@
 # Guide to css
 
 ### Index
-
-1. Order in css
-2.  Class vs Id
+ A. Specificity in css 
+     
+     1. Order in css
+     2.  Class vs Id (ID has a higher priority than class)
+     
 3.  Pseudo-class selectors
 4.  Colors
 5.  Making Sense of Units in CSS
 6.  Understanding CSS Display : none, inline , block, inline-block
+    
+        a. Display: None   vs.  Visibility: Hidden 
+        b. inline vs block (div vs span) 
 
 ----
 ## 1.Order in css
- This is because in CSS, the order in which you write your declarations matter. If a conflicting declaration is found further down the styles document, it is honored.
+ This is because in CSS, the order in which you write your declarations matter. **If a conflicting declaration is found further down the styles document, it is honored.**
 
 ##### Specificty in CSS
 The points are calculated off of the selectors in the CSS rule.
