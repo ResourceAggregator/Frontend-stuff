@@ -6,14 +6,14 @@
      1. Order in css
      2.  Class vs Id (ID has a higher priority than class)
      
-3.  Pseudo-class selectors
+3.  CSS Selectors
 4.  Colors
 5.  Making Sense of Units in CSS
 6.  Understanding CSS Display : none, inline , block, inline-block
     
         a. Display: None   vs.  Visibility: Hidden 
         b. inline vs block (div vs span) 
-
+7. CSS Flex
 ----
 ## 1.Order in css
  This is because in CSS, the order in which you write your declarations matter. **If a conflicting declaration is found further down the styles document, it is honored.**
@@ -50,7 +50,38 @@ header h1 is the obvious winner here, as 2 is greater than 1
 
 ![image](https://user-images.githubusercontent.com/43414928/87520118-253c5780-c6a0-11ea-8e70-707cd4fd9beb.png)
 
-## 3. Pseudo-class selectors
+## 3. CSS Selectors
+
+```
+- Simple selectors (select elements based on name, id, class)
+- Combinator selectors (select elements based on a specific relationship between them)
+- Pseudo-class selectors (select elements based on a certain state)
+- Pseudo-elements selectors (select and style a part of an element)
+- Attribute selectors (select elements based on an attribute or attribute value)
+```
+
+
+2. Combinator selectors
+
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator. There are four different combinators in CSS:
+
+- descendant selector (space)
+- child selector (>)
+- adjacent sibling selector (+)
+- general sibling selector (~)
+
+https://www.w3schools.com/Css/css_combinators.asp
+
+difference between descedant and child selector
+
+- The child combinator selector (>) targets an element that is a child of its parent. It does not target descendants beyond the children.
+
+- The descendant selector targets the child and other descendants of the parent/ancestor.
+
+
+![Screenshot](https://user-images.githubusercontent.com/43414928/89120761-6e7d0b80-d4d6-11ea-8ae8-5af23bc860ee.png)
+
+3. Pseudo-class selectors
 
 > pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example :hover,  :first-child, :nth-child
 
@@ -91,6 +122,13 @@ The order in which you define these link pseudo-selectors is important. It shoul
 
 Content added using pseudo-elements is only visually displayed. It is not inserted into the DOM.
 
+4. Attribute selectors
+
+Selects all elements that have the given attribute.
+
+Syntax: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+
+https://www.w3schools.com/css/css_attribute_selectors.asp
 
 
 ## 4.Colors
@@ -166,3 +204,11 @@ Inline elements don’t accept width or height properties, and top-bottom margin
 ```
 ![image](https://user-images.githubusercontent.com/43414928/87634920-d653f800-c75b-11ea-9f4d-cca687ad8392.png)
 
+
+
+## 7. CSS Flex
+
+- http://flexbox.malven.co/
+
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://yoksel.github.io/flex-cheatsheet/#section-justify-content
