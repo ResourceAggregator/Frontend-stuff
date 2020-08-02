@@ -14,6 +14,7 @@
         a. Display: None   vs.  Visibility: Hidden 
         b. inline vs block (div vs span) 
 7. CSS Flex
+8. Css Clip Path
 ----
 ## 1.Order in css
  This is because in CSS, the order in which you write your declarations matter. **If a conflicting declaration is found further down the styles document, it is honored.**
@@ -212,3 +213,13 @@ Inline elements don’t accept width or height properties, and top-bottom margin
 
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://yoksel.github.io/flex-cheatsheet/#section-justify-content
+
+
+
+## Css Clip Path
+
+Tool: https://bennettfeely.com/clippy/
+https://css-playground.com/view/65/clipping-paths-with-clip-path
+
+https://getwaves.io/
+
